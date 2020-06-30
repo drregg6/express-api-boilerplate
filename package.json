@@ -4,11 +4,13 @@
   "description": "Quickly create a backend API with Express with this boilerplate",
   "main": "server.js",
   "scripts": {
+    "dev": "npm run start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dave Regg <dave.r.regg@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.9.20"
   }
 }

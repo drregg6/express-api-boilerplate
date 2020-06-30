@@ -1,6 +1,11 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
+
+// Middleware
+const PORT = process.env.PORT || 3000;
+
+// Routes
+app.use(`/api/users`, require(`./routes/api/users`));
 
 app.get('/', (req, res) => {
   res.send('Hello world!');
